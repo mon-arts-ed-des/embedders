@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="#">
     <meta name="author" content="#">
-    <title>@BirdyOz: Unsplash image embedder & attribution maker</title>
+    <title>Unsplash Image Embedder & Attribution Maker</title>
     <!-- Bootstrap core CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <a class="navbar-brand" href="#">@BirdyOz: Unsplash embedder & attribution maker</a>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #3c6ba4;">
+        <a class="navbar-brand" href="#">Unsplash Embedder & Attribution Maker</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -38,7 +38,7 @@
             </ul>
         </div>
         <button class="btn btn-outline-light" href="#navCollapse" target="#navCollapse" type="button" data-toggle="collapse" data-target="#navCollapse" aria-expanded="false" aria-controls="collapseExample">
-                Want more helpers?
+                Click Here for Other Embedding Tools
             </button>
     </nav>
     <div class="clearfix"></div>
@@ -100,7 +100,7 @@
 
         <!-- Alert FIRST TIME users -->
         <div class="alert alert-ft alert-warning alert-dismissible collapse" role="alert">
-            <strong>FIRST TIME USER?</strong> Click on the "First time" button for setup instructions
+            <h3 class="alert-header">FIRST TIME USER?</h3><p>Click on the "First time" button for setup instructions</p>
             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
             </button>
@@ -121,7 +121,7 @@
 
 
         <h1 class="display-4">Unsplash image embedder & attribution maker</h1>
-        <p class="lead">A Bookmarklet to create HTML snippets to embed Unsplash images with proper attribution. These can be pasted into any HTML editor.</p>
+        <p class="lead">A Bookmarklet to create HTML snippets to embed Unsplash images with proper attribution. These can be pasted into any HTML editor. Created by Greg Bird <a href="https://twitter.com/birdyoz" target="_blank"><i class="fab fa-twitter-square"></i> @BirdyOz</p>
         <p>
             <button class="btn btn-lg btn-outline-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
                 First time? Click here for setup instructions.
@@ -131,14 +131,16 @@
             <div class="card card-body">
                 <h2>First time user?</h2>
                 <ol>
-                    <li><strong>Drag</strong> the following bookmarklet into your browers bookmark bar: <a class="bookmarklet" href="javascript:(function()%7Bvar%20title%20%3D%20document.title%3Bconsole.log(%22%40GB%3A%20title%20%3D%20%22%2C%20title)%3Bvar%20img%20%20%3D%20encodeURIComponent(document.querySelectorAll('%5Bproperty%3D%22og%3Aimage%22%5D')%5B0%5D.getAttribute(%22content%22))%3Bconsole.log(%22%40GB%3A%20img%20%3D%20%22%2C%20img)%3Bvar%20url%20%3D%20'https%3A%2F%2Fbirdyoz.github.io%2Fhelpers%2Funsplash_embed.html%3Faddr%3D'%2BencodeURIComponent(document.location.href)%2B'%26title%3D'%2BencodeURIComponent(document.title)%2B'%26img%3D'%2Bimg%3Bconsole.log(%22%40GB%3A%20url%20%3D%20%22%2C%20url)%3Bwindow.open(url%2C'_blank')%7D)()">Unsplash Embedder 2</a>
+                    <li><strong>Click, hold and drag</strong> the following bookmarklet into your browers bookmark bar: <a class="bookmarklet" href="javascript:(function()%7Bvar%20title%20%3D%20document.title%3Bconsole.log(%22%40GB%3A%20title%20%3D%20%22%2C%20title)%3Bvar%20img%20%20%3D%20encodeURIComponent(document.querySelectorAll('%5Bproperty%3D%22og%3Aimage%22%5D')%5B0%5D.getAttribute(%22content%22))%3Bconsole.log(%22%40GB%3A%20img%20%3D%20%22%2C%20img)%3Bvar%20url%20%3D%20'https%3A%2F%2Fbirdyoz.github.io%2Fhelpers%2Funsplash_embed.html%3Faddr%3D'%2BencodeURIComponent(document.location.href)%2B'%26title%3D'%2BencodeURIComponent(document.title)%2B'%26img%3D'%2Bimg%3Bconsole.log(%22%40GB%3A%20url%20%3D%20%22%2C%20url)%3Bwindow.open(url%2C'_blank')%7D)()">Unsplash Embedder 2</a>
                         <br><span class="text-muted">(Note: Make sure you drag the link onto your browser bookmarks. Clicking will just bring you back to here)</span></li>
                     <li>Visit Unsplash - Beautiful Free Images and find your favourite image</li>
                     <li>Click on the 'Unsplash embedder & attribution maker' in your bookmarks</li>
                     <li>You will be returned to this page, but now your selected image will be displayed below</li>
-                    <li>Press the copy button next to the layout type that you prefer. This will copy the HTML to your clipboard</li>
+                    <li>Press the copy button next to the layout type that you prefer (Float Right/Left, Med/Lge Img). This will copy the HTML to your clipboard</li>
+                    <li>Also <strong><i class="fa fa-download"></i> Download the image</strong>, this is to protect against link breakages when embedding.</li>
                     <li>Paste this HTML anywhere that you can paste code (eg a Moodle page or tool)</li>
-                    <li>Ready to go? Visit <p><strong><a href="https://unsplash.com/">Beautiful Free Images & Pictures | Unsplash</a></strong></p>, select an image that you like and then press on the "Unsplash Embedder"</li>
+                    <li>Double click on the image in Moodle or wherever you've pasted it, and replace it with the image you downloaded. This is so if the original image link is changed or broken, your embed code will still work!</li>
+                    <li>Ready to go? Visit <p><strong><a href="https://unsplash.com/">Beautiful Free Images & Pictures | Unsplash</a></strong></p></li>
                 </ol>
                 <h3>Show me how (Screen Video Tutorial)</h3>
                 <div>
@@ -254,7 +256,7 @@
             <hr>
             <footer class="page-footer">
                 <p class="float-right"><a href="#">Back to top</a></p>
-                <p>'Unsplash Embed - attribution maker' by Greg Bird (@BirdyOz) | <a href="https://twitter.com/BirdyOz" target="_blank">Twitter</a> | <a href="https://www.linkedin.com/in/birdyoz/" target="_blank">LinkedIn</a> | <a href="https://www.youtube.com/BirdyOz" target="_blank">YouTube</a> | <a href="mailto:greg.bird.oz@gmail.com">email</a></p>
+                <p>'Unsplash Embed - attribution maker' by Greg Bird (@BirdyOz) | <a href="https://twitter.com/BirdyOz" target="_blank" style="text-decoration:none;"><i class="fab fa-twitter-square" style="color:#28AAE1;"></i></a> | <a href="https://www.linkedin.com/in/birdyoz/" style="text-decoration:none;" target="_blank"><i class="fab fa-linkedin" style="color:#0479B6;"></i></a> | <a href="https://www.youtube.com/BirdyOz" target="_blank" style="text-decoration:none;"><i class="fab fa-youtube" style="color:#FF0000;"></i></a> | <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=greg.bird.oz@gmail.com&su=Hi%20Greg%20I%20have%20a%20question" style="text-decoration:none;"><i class="fas fa-envelope"></i></a></p>
             </footer>
         </div>
         <!-- /.container -->
