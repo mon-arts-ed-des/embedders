@@ -142,7 +142,7 @@ $(function() {
                     $('#yt_video_placeholder').replaceWith(dom);
 
 
-                    $('button#copy').click(function(event) {
+                    $('button#copyRight').click(function(event) {
                         /* Act on the event */
 
                         var btn = $(this);
@@ -166,7 +166,7 @@ $(function() {
                     console.log("error, see console");
                 });
 
-            $("#checkbox").change(function() {
+            $("#checkboxRight").change(function() {
                 if (this.checked) {
                     console.log("@GB: checked = checked");
                     //Do stuff
