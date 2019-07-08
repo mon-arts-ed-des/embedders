@@ -38,7 +38,7 @@
             </ul>
         </div>
         <button class="btn btn-outline-light" href="#navCollapse" target="#navCollapse" type="button" data-toggle="collapse" data-target="#navCollapse" aria-expanded="false" aria-controls="collapseExample">
-                Want more helpers?
+                Click Here For Other Embedding Tools
             </button>
     </nav>
     <div class="clearfix"></div>
@@ -93,15 +93,16 @@
             </button>
         </div>
         <!-- Alert FIRST TIME users -->
-        <div class="alert alert-ft alert-warning alert-dismissible collapse" role="alert">
-            <strong>FIRST TIME USER?</strong> Click on the "First time" button for setup instructions
+        <div class="alert alert-ft alert-danger alert-dismissible collapse" role="alert">
+            <h3 class="alert-header"><strong>FIRST TIME USER?</strong></h3>
+            <p>Click on the "First time" button for setup instructions</p>
             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
             </button>
         </div>
         <h1 class="display-4">Pixabay attribution helper & image resizer</h1>
-        <p class="lead">A Bookmarklet to create a Pixabay attribution plus placeholder image, then properly align these statements with the image. </p>
-        <p>The placeholder image can then be replaced with a properly resized image, as provided.</p>
+        <p class="lead">A Bookmarklet to create a Pixabay attribution plus placeholder image, then properly align these statements with the image.
+       The placeholder image can then be replaced with a properly resized image, as provided. Created by Greg Bird <a href="https://twitter.com/birdyoz" target="_blank" style="text-decoration:none;"><i class="fab fa-twitter-square"></i> @BirdyOz</a></p>
         <p>
             <button class="btn btn-lg btn-outline-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
                 First time? Click here for setup instructions.
@@ -111,15 +112,18 @@
             <div class="card card-body">
                 <h2>First time user?</h2>
                 <ol>
-                    <li><strong>Drag</strong> the following bookmarklet into your browers bookmark bar: <a class="bookmarklet" href="javascript:(function()%7Bvar%20el%20%3D%20document.querySelectorAll('%5Bitemprop%3D%22contentURL%22%5D')%5B0%5D%3Bvar%20src%20%3D%20encodeURIComponent(el.getAttributeNode(%22src%22).value)%3Bvar%20alt%20%3D%20encodeURIComponent(el.getAttributeNode(%22alt%22).value)%3Bvar%20statement%20%3D%20encodeURIComponent(document.querySelector('span.attribution_field%20span').innerHTML)%3Bvar%20url%20%3D%20'https%3A%2F%2Fbirdyoz.github.io%2Fhelpers%2Fpixabay_attribution_helper.html%3Fsrc%3D'%2Bsrc%2B'%26statement%3D'%2Bstatement%2B'%26alt%3D'%2Balt%3Bwindow.open(url%2C'_blank')%7D)()">Pixabay attribution maker</a>
+                    <li><strong>Drag</strong> the following bookmarklet into your browers bookmark bar: <a class="bookmarklet" href="javascript:(function()%7Bvar%20el%20%3D%20document.querySelectorAll('%5Bitemprop%3D%22contentURL%22%5D')%5B0%5D%3Bvar%20src%20%3D%20encodeURIComponent(el.getAttributeNode(%22src%22).value)%3Bvar%20alt%20%3D%20encodeURIComponent(el.getAttributeNode(%22alt%22).value)%3Bvar%20statement%20%3D%20encodeURIComponent(document.querySelector('span.attribution_field%20span').innerHTML)%3Bvar%20url%20%3D%20'https%3A%2F%2Fmon-arts-ed-des.github.io%2Fembedders%2Fpixabay_attribution_helper.html%3Fsrc%3D'%2Bsrc%2B'%26statement%3D'%2Bstatement%2B'%26alt%3D'%2Balt%3Bwindow.open(url%2C'_blank')%7D)()">Pixabay attribution maker</a>
                         <br><span class="text-muted">(Note: Make sure you drag the link onto your browser bookmarks. Clicking will just bring you back to here)</span></li>
                     <li>Visit Pixabay and find your favourite image</li>
                     <li>Click on the 'Pixabay attribution helper & image resizer' in your bookmarks</li>
                     <li>You will be returned to this page, but now your selected image will be displayed below</li>
                     <li>Press the copy button next to the layout type that you prefer. This will copy the HTML to your clipboard</li>
+                    <li>Also <strong><i class="fa fa-download"></i> Download the image</strong>, this is to protect against link breakages when embedding.</li>
                     <li>Paste this HTML anywhere that you can paste code (eg a Moodle page or tool)</li>
-                    <li>Download the resized image as provided</li>
-                    <li>Upload this image to replace the placeholder</li>
+                    <li>Double click on the image in Moodle or wherever you've pasted it, and replace it with the image you downloaded. This is so if the original image link is changed or broken, your embed code will still work!</li>
+                    <li>Ready to go? Visit <p><strong><a href="https://pixabay.com/">Stunning free images & royalty free stock | Pixabay</a></strong></p></li>
+                    
+                    
                 </ol>
                 <p class="alert alert-info">NB: Pixabay does not allow for hotlinking (embedding). They require that you download their images and re-upload to your own platform (Moodle or other).</p>
                 <h3>Show me how (Screen Video Tutorial)</h3>
@@ -231,12 +235,12 @@
                     </div>
                 </div>
             </div>
-            <!-- /END THE FEATURETTES -->
+           <!-- /END THE FEATURETTES -->
             <!-- FOOTER -->
             <hr>
             <footer class="page-footer">
                 <p class="float-right"><a href="#">Back to top</a></p>
-                <p>'Pixabay Embed - attribution maker' by Greg Bird (@BirdyOz) | <a href="https://twitter.com/BirdyOz" target="_blank">Twitter</a> | <a href="https://www.linkedin.com/in/birdyoz/" target="_blank">LinkedIn</a> | <a href="https://www.youtube.com/BirdyOz" target="_blank">YouTube</a> | <a href="mailto:greg.bird.oz@gmail.com">email</a></p>
+                <p>'Unsplash Embed - attribution maker' by Greg Bird (@BirdyOz) | <a href="https://twitter.com/BirdyOz" target="_blank" style="text-decoration:none;"><i class="fab fa-twitter-square fa-2x" style="color:#28AAE1;"></i></a> | <a href="https://www.linkedin.com/in/birdyoz/" style="text-decoration:none;" target="_blank"><i class="fab fa-linkedin fa-2x" style="color:#0479B6;"></i></a> | <a href="https://www.youtube.com/BirdyOz" target="_blank" style="text-decoration:none;"><i class="fab fa-youtube fa-2x" style="color:#FF0000;"></i></a> | <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=greg.bird.oz@gmail.com&su=Hi%20Greg%20I%20have%20a%20question" style="text-decoration:none;"><i class="fas fa-envelope fa-2x"></i></a></p>
             </footer>
         </div>
         <!-- /.container -->
@@ -247,6 +251,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <script src="pixabay_attribution_helper_new.js"></script>
+        <script src="https://kit.fontawesome.com/a295bee490.js"></script>
 </body>
 
 </html>
