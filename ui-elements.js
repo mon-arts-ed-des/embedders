@@ -11,7 +11,7 @@ $(function() {
     $('.copybutton').on('click', function(event) {
         var btn = $(this);
         var snippet = btn.prev().html();
-        console.log(snippet);
+        console.log("@GB: snippet = ", snippet);
         copyTextToClipboard(snippet);
         // btn.addClass('btn-danger');
         btn.toggleClass('btn-success btn-light');
