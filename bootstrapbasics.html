@@ -1,1 +1,198 @@
-See below
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="#">
+    <meta name="author" content="#">
+    <title>Copy/Paste UI Elements for Moodle (&amp; elsewhere)</title>
+    <!-- Bootstrap core CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color:#3c6ba4;">
+        <a class="navbar-brand" href="#">Copy/Paste UI Elements</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#quotes">Fancy Quote</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#boxes">Boxes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#alerts">Alerts</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#interactive">Interactive Elements</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#tables">Tables</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#cards">Card Groups</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#modals">Modals</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#attribution">Attribution</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#layouts">Preset Layouts</a></li>
+            </ul>
+        </div>
+        <button class="btn btn-outline-light" href="#navCollapse" target="#navCollapse" type="button" data-toggle="collapse" data-target="#navCollapse" aria-expanded="false" aria-controls="collapseExample">
+                Click Here for Other Embedding Tools
+            </button>
+
+    </nav>
+    <div class="clearfix"></div>
+        <div class="mt-4 pt-5 pb-2 collapse" id="navCollapse" style="background-color: #3c6ba4;">
+        <div class="card-deck m-3">
+                <div class="card text-white shadow rounded bg-danger">
+                <h5 class="card-header mt-2">Youtube helper</h5>
+                <div class="card-body">
+                    <p class="card-text">Get responsive Youtube embed code, complete with video box, title, description and playtime</p>
+                    <a href="https://mon-arts-ed-des.github.io/embedders/youtube_embedder.html" class="stretched-link"></a>
+                </div>
+            </div>
+            <div class="card text-white shadow rounded bg-secondary">
+                <h5 class="card-header mt-2">Unsplash helper</h5>
+                <div class="card-body">
+                    <p class="card-text">Get responsive Unsplash image embed with attribution, for various screen layouts. Download appropriately resized images</p>
+                    <a href="https://mon-arts-ed-des.github.io/embedders/unsplash_embed.html" class="stretched-link"></a>
+                </div>
+            </div>
+            <div class="card text-white shadow rounded bg-success">
+                <h5 class="card-header mt-2">Pixabay helper</h5>
+                <div class="card-body">
+                    <p class="card-text">Get responsive Pixabay image placeholder with attribution. Download resized images, to replace this placeholder.</p>
+                    <a href="https://mon-arts-ed-des.github.io/embedders/pixabay_attribution_helper.html" class="stretched-link"></a>
+                </div>
+            </div>
+            <div class="card text-white shadow rounded bg-info">
+                <h5 class="card-header mt-2">Shutterstock helper</h5>
+                <div class="card-body">
+                    <p class="card-text">Get Shutterstock image placeholder with attribution. To be replaced with the purchased shutterstock original.</p>
+                    <a href="https://mon-arts-ed-des.github.io/embedders/shutterstock_attribution_helper.html" class="stretched-link"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Marketing messaging and featurettes
+        ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+    <div class="container marketing" style="margin-top: 100px">
+        <h1 class="display-4">Re-usable UI elements for Moodle (&amp; elsewhere)</h1>
+        <p class="lead text-justify">The following UI elements can be used to enhance your Moodle learning materials and create an aesthetically pleasing and consistent environment, all within the Moodle editor. 
+        They use a combination of <a href="https://getbootstrap.com/docs/4.0/components/alerts/" target="_blank" style="text-decoration:none;"><i class="fab fa-bootstrap"></i> Bootstrap (Layout, Content and Components) </a> and <a href="https://fontawesome.com/v4.7.0/" target="_blank" style="text-decoration:none;"><i class="fab fa-font-awesome-flag"></i> FontAwesome v4.7</a>.  
+            These are both 'baked in to Moodle' so it makes editing a breeze. Created by Greg Bird <a href="https://twitter.com/birdyoz" target="_blank" style="text-decoration:none;"><i class="fab fa-twitter-square"></i> @BirdyOz</a></p>
+<hr />
+        <h2>How To Use The Materials On This Page</h2>
+        <p>To get the most out of the materials presented here please view the video and follow the instructions below</p>
+        <ul>
+            <li>Find the element you want to use.</li>
+            <li>Click the <i class="fa fa-clipboard"></i> 'Copy code' button</li> underneath the element.
+            <li>Go to the area in Moodle you'd like to insert the element. This is anywhere you can access the HTML Editor (look for &#60; &#62; icon) via the ATTO or TinyMCE editors.</li>
+            <li>Paste in the code from this site that you copied.</li>
+            <li>Edit the template text with your directions/content.</li>
+        </ul>
+        <p><iframe id="instructions"></iframe></p>
+        
+        </hr>
+  <h3 id="quotes">1 Row with 2 Large Columns</h3>
+   <div class="copythis">
+<!-- 2 Large Columns -->
+<div class="row w-100">
+  <div class="col-lg">
+    Column 1
+  </div>
+  <div class="col-lg">
+    Column 2
+  </div>
+  </div>
+<!-- End of 2 Large Columns -->
+</div>
+  <h3 id="quotes">1 Row with 2 Large Columns Responsive Video on the Right</h3>
+<div class="copythis">
+<!-- 2 Large Columns Responsive Video -->
+<div class="row w-100">
+  <div class="col-lg">
+    <h3>Heading - Title of Video</h3>
+    <p>Column 1 - Put context for video here</p>
+  </div>
+  <div class="col-lg">
+    <div class="embed-responsive embed-responsive-16by9">
+ <ol>
+   <li>Insert iframe here inside this div element</li>
+   <li>Remove height and width from iframe</li>
+   <li>Add class="embed-responsive-item" inside the iframe</li>
+   <li>Remove this list if you have not done so already. delete from &#60;ol&#62; to &#60;/ol&#62;</li>
+  </div>
+  </div>
+  </div>
+<!-- End of 2 Large Columns Responsive Video -->
+</div>
+  <hr>
+  <h3 id="quotes">1 Row with 2 Large Columns Responsive Image on the Right</h3>
+<div class="copythis">
+<!-- 2 Large Columns Responsive Image -->
+<div class="row w-100">
+  <div class="col-lg">
+    <h3>Heading - Title here</h3>
+    <p>Column 1 - Put context for imaage here</p>
+  </div>
+  <div class="col-lg">
+    <div class="text-center">
+ <ol>
+   <li>Insert img between the &#60;div&#62; &#60;/div&#62; tags</li>
+   <li>Change height to height="auto" and width to width="50%" (or whatever width is appropriate for your scenario) inside the &#60;img&#62; tag</li>
+   <li>Add an image description by adding alt="description_of_img" inside the &#60;img&#62; tag for accessibility</li>
+   <li>Remove this list if you have not done so already. delete from &#60;ol&#62; to &#60;/ol&#62;</li>
+  </div>
+  </div>
+  </div>
+<!-- End of 2 Large Columns Responsive Image -->
+</div>
+   <hr>
+  <h3 id="quotes">3 Buttons Spaced - Opens link in New Window</h3>
+  <p class="alert alert-info">NB: &#60;div&#62; &#60;/div&#62; element that contains the buttons has w-75, mx-auto and text-center classes applied to center the buttons on your page. If you'd rather these were aligned left, remove these 3 classes but touch nothing else.</p>
+  <!-- 3 Buttons Spaced Using mx-3 -->
+  <div class="copythis">
+    <div class="w-75 mx-auto text-center"><a href="YOUR_LINK_1_HERE" class="btn btn-primary btn-default" target="_blank">Button 1 Title</a>
+      <a href="YOUR_LINK_2_HERE" class="btn btn-info btn-default text-white mx-3" target="_blank">Button 2 Title</a>
+      <a href="YOUR_LINK_3_HERE" class="btn btn-dark btn-default" target="_blank">Button 3 Title</a>
+    </p>
+  </div>
+         <!-- FOOTER -->
+            <hr>
+            <footer class="page-footer">
+                <p class="float-right"><a href="#">Back to top</a></p>
+                <p>'Unsplash Embed - attribution maker' by Greg Bird (@BirdyOz) | <a href="https://twitter.com/BirdyOz" target="_blank" style="text-decoration:none;"><i class="fab fa-twitter-square fa-2x" style="color:#28AAE1;"></i></a> | <a href="https://www.linkedin.com/in/birdyoz/" style="text-decoration:none;" target="_blank"><i class="fab fa-linkedin fa-2x" style="color:#0479B6;"></i></a> | <a href="https://www.youtube.com/BirdyOz" target="_blank" style="text-decoration:none;"><i class="fab fa-youtube fa-2x" style="color:#FF0000;"></i></a> | <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=greg.bird.oz@gmail.com&su=Hi%20Greg%20I%20have%20a%20question" style="text-decoration:none;"><i class="fas fa-envelope fa-2x"></i></a></p>
+            </footer>
+        </div>
+        <!-- /.container -->
+
+
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="ui-elements-text.js"></script>
+          <script src="https://kit.fontawesome.com/a295bee490.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+
+</body>
+
+</html>
