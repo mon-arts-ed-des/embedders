@@ -4,4 +4,4 @@
 <br />
 <h3>Unsplash Embedder with Attributions</h3>
 <p>This tool will help you take <strong>any image from unsplash</strong> and put it into your Moodle page with attribution and formatting options; put the image to the right or left, have a medium or large image. Make sure to follow the <strong>first time instructions at the top of the page</strong></p>
-<button class="btn btn-secondary btn-lg"><a href="https://mon-arts-ed-des.github.io/helpers/unsplash_embed.html" target="_blank">Go to Unsplash Embedder</a></button>
+<button class="btn btn-secondary btn-lg"><a href="https://mon-arts-ed-des.github.io/embedders/unsplash_embed.html" target="_blank">Go to Unsplash Embedder</a></button>
