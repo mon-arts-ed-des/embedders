@@ -129,20 +129,38 @@ transition: color .15s ease-in-out,background-color .15s ease-in-out,border-colo
         <hr />
   <h3 id="2lgcols">1 Row with 2 Large Columns</h3>
 <div class="copythis"><!-- 2 Large Columns -->
-<div class="row w-100">
+<div class="row w-100 mx-auto">
 <div class="col-lg">Column 1
 </div>
 <div class="col-lg">Column 2
 </div>
 </div><!-- End of 2 Large Columns --></div>
         <hr />
-  <h3 id="respvid">1 Row with 2 Large Columns Responsive Video on the Right</h3>
-<div class="copythis"><!-- 2 Large Columns Responsive Video -->
-<div class="row w-100">
+  <h3 id="respvidright">1 Row with 2 Large Columns Responsive Video on the Right</h3>
+<div class="copythis">
+<!-- 2 Large Columns Responsive Video on right-->
+<h3>[fa-youtube-play] Heading - Title of Video</h3>
+<div class="row w-100 mx-auto">
 <div class="col-lg">
-<h3>Heading - Title of Video</h3>
 <p>Column 1 - Put context for video here</p>
 </div>
+<div class="col-lg">
+<div class="embed-responsive embed-responsive-16by9">
+<ol>
+<li>Insert iframe here inside this div element</li>
+   <li>Remove height and width from iframe</li>
+   <li>Add class="embed-responsive-item" inside the iframe</li>
+   <li>Remove this list if you have not done so already. delete from &#60;ol&#62; to &#60;/ol&#62;</li>
+  </div>
+  </div>
+  </div>
+<!-- End of 2 Large Columns Responsive Video on right-->
+</div>
+	<hr />
+  <h3 id="respvidleft">1 Row with 2 Large Columns Responsive Video on the Left</h3>
+<div class="copythis"><!-- 2 Large Columns Responsive Video on left-->
+<h3>[fa-youtube-play] Heading - Title of Video</h3>
+<div class="row w-100 mx-auto">
 <div class="col-lg">
 <div class="embed-responsive embed-responsive-16by9">
 	<ol>
@@ -151,18 +169,21 @@ transition: color .15s ease-in-out,background-color .15s ease-in-out,border-colo
    <li>Add class="embed-responsive-item" inside the iframe</li>
    <li>Remove this list if you have not done so already. delete from &#60;ol&#62; to &#60;/ol&#62;</li>
   </div>
-  </div>
-  </div>
-<!-- End of 2 Large Columns Responsive Video -->
+</div>
+<div class="col-lg">
+<p>Column 1 - Put context for video here</p>
+</div>
+</div>
+<!-- End of 2 Large Columns Responsive Video on left-->
 </div>
   <hr />
-  <h3 id="respimg">1 Row with 2 Large Columns Responsive Image on the Right</h3>
+  <h3 id="respimgright">1 Row with 2 Large Columns Responsive Image on the Right</h3>
      <p class="alert alert-info">NB: &#60;div&#62; &#60;/div&#62; element that contains the image has the text-center class applied to center the image in that column. If you'd rather these were aligned left, remove these 3 classes but touch nothing else.</p>
 <div class="copythis"><!-- 2 Large Columns Responsive Image -->
-<div class="row w-100">
-<div class="col-lg">
 <h3>Heading - Title here</h3>
-<p>Column 1 - Put context for imaage here</p>
+<div class="row w-100 mx-auto">
+<div class="col-lg">
+<p>Column 1 - Put context for image here</p>
 	</div>
 <div class="col-lg">
 <div class="text-center">
@@ -175,6 +196,27 @@ transition: color .15s ease-in-out,background-color .15s ease-in-out,border-colo
 </div>
 </div>
 <!-- End of 2 Large Columns Responsive Image -->
+</div>
+	<hr />
+<h3 id="respimgleft">1 Row with 2 Large Columns Responsive Image on the Left</h3>
+<p class="alert alert-info">NB: &#60;div&#62; &#60;/div&#62; element that contains the image has the text-center class applied to center the image in that column. If you'd rather these were aligned left, remove these 3 classes but touch nothing else.</p>
+<div class="copythis"><!-- 2 Large Columns Responsive Image on Left -->
+<h3>Heading - Title here</h3>
+<div class="row w-100 mx-auto">
+	<div class="col-lg">
+<div class="text-center">
+<ol>
+   <li>Insert img between the &#60;div&#62; &#60;/div&#62; tags</li>
+   <li>Change height to height="auto" and width to width="50%" (or whatever width is appropriate for your scenario) inside the &#60;img&#62; tag</li>
+   <li>Add an image description by adding alt="description_of_img" inside the &#60;img&#62; tag for accessibility</li>
+   <li>Remove this list if you have not done so already. delete from &#60;ol&#62; to &#60;/ol&#62;</li>
+</div>
+</div>
+<div class="col-lg">
+<p>Column 1 - Put context for image here</p>
+	</div>
+</div>
+<!-- End of 2 Large Columns Responsive Image on Left -->
 </div>
 <hr />
   <h3 id="3btns">3 Buttons Spaced - Opens link in New Window</h3>
